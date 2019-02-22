@@ -21,7 +21,6 @@ bookmarksRouter
     res.json(STORE)
   })
   .post(bodyParser, (req, res) => {
-    console.log(req.body);
     let { title, url, description, rating } = req.body;
 
     if (!title) {
